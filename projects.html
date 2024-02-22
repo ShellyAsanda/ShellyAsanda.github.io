@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+ 
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>Project 1</h3>
+      <p>Description of Project 1</p>
+      <p>Project 1 is a bird watching app , the user must login to view bird watching hotspots. The user can also view images of the birds.</p>
+      <button type="button" onclick="displayDocument()">
+        Click here to download Project 1.
+        </button>
+        
+        <p id="demo"></p>
+        
+        <script>
+        function displayDocument() {
+          var documentUrl = 'BirdWatcher.zip'; 
+          document.getElementById('demo').innerHTML = `<embed src="${documentUrl}" width="100%" height="600px" type="application/pdf">`;
+        }
+        </script>
+    </div>
+    <div class="project">
+      <h3>Project 2</h3>
+      <p>Description of Project 2</p>
+      <p>Project 2 is a Donations Web application, The user must register and login to access the web app. The app allows the user to donate money or goods to areas that have been affected by disasters.
+        The web app allows the user to send alerts of the places that have been affected by the disasters
+        The user can also view donations made  .</p>
+      <button type="button" onclick="displayDocument()">
+        Click here to download Project 2.
+        </button>
+        
+        <p id="demo"></p>
+        
+        <script>
+        function displayDocument() {
+          var documentUrl = 'DonationApp.zip'; 
+          document.getElementById('demo').innerHTML = `<embed src="${documentUrl}" width="100%" height="600px" type="application/pdf">`;
+        }
+        </script>
+    </div>
+    <div class="project">
+      <h3>Project 3</h3>
+      <p>Description of Project 3</p>
+      <p>Project 1 is a web app for law firm, the website will allow users to view information 
+        about the law firm, type of services they offer and the contact details of their lawyers.
+The website has a privacy page that allows only authorized personnel to access it to 
+view messages sent by clients and potential clients.
+      </p>
+      <button type="button" onclick="displayDocument()">
+        Click here to download Project 3.
+        </button>
+        
+        <p id="demo"></p>
+        
+        <script>
+        function displayDocument() {
+          var documentUrl = 'LegalApp.zip'; 
+          document.getElementById('demo').innerHTML = `<embed src="${documentUrl}" width="100%" height="600px" type="application/pdf">`;
+        }
+        </script>
+    </div>
+    
+  </section>
+
+  
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>My Portfolio</h1>
+    <nav>
+      <ul>
+        
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <title>Developer Info</title>
+<style>
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .column {
+    flex: 1;
+    padding: 20px;
+  }
+
+  .column img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="column">
+    <img src="image/icon.png" alt="Developer Image">
+  </div>
+  <div class="column">
+    <h2>About the Developer</h2>
+    <p>Hello, I'm Asanda Mkize, a passionate web developer based in KwaZulu-Natal , Durban. I specialize in creating modern, responsive websites that deliver a great user experience.</p>
+    <p>With 3 years of experience in web development as a student, I have a strong foundation in HTML, Java,  CSS, JavaScript,C# and various web development frameworks. I am constantly learning and adapting to new technologies to stay ahead in this ever-evolving field.</p>
+    <p>I believe in the power of collaboration and strive to work closely with clients to understand their needs and bring their vision to life. Whether you need a simple website, an e-commerce platform, or a custom web application, I'm here to help you achieve your goals.</p>
+    <p>Feel free to explore my portfolio and get in touch if you'd like to discuss your project further. I look forward to working with you!</p><br>
+
+    
+    <button type="button" onclick="displayDocument()">
+      Click here to download my CV.
+      </button>
+      
+      <p id="demo"></p>
+      
+      <script>
+      function displayDocument() {
+        var documentUrl = 'myCV.docx'; 
+        document.getElementById('demo').innerHTML = `<embed src="${documentUrl}" width="100%" height="600px" type="application/pdf">`;
+      }
+      </script>
+    
+  </div>
+</div>
+
+
+
+</body>
+  
+ 
+
+  <script src="script.js"></script>
+</body>
+</html>
